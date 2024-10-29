@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             {path:"/post-jobs", element: <PostJobs />},
             {path:"/my-job", element: <MyJobs />},
             {path:"/salary", element: <EstimatedSalary />},
-            {path:"/edit-job/:id", element: <UpdateJob />, loader: ({params}) => fetch(`http://localhost:3000/all-jobs/${params.id}`)},
+            {path:"/edit-job/:id", element: <UpdateJob />, loader: ({params}) => fetch(`https://career-page-5smu.onrender.com/all-jobs/${params.id}`)},
             {path:"/login", element: <Login />},
             {path:"/job/:id", element: <JobDetails />},
         ]

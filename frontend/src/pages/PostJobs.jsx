@@ -11,7 +11,7 @@ const PostJobs = () => {
   const onSubmit = (data) => {
     data.skills = selectedOption;
     //console.log("Data to be sent:", data); // Log the data before sending
-    fetch("http://localhost:3000/post-job", {
+    fetch("https://career-page-5smu.onrender.com/post-job", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)

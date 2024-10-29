@@ -16,7 +16,7 @@ const UpdateJob = () => {
   const onSubmit = (data) => {
     data.skills = selectedOption;
     //console.log("Data to be sent:", data); // Log the data before sending
-    fetch(`http://localhost:3000/update-job/${id}`, {
+    fetch(`https://career-page-5smu.onrender.com/update-job/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)

@@ -9,7 +9,7 @@ const JobDetails = () => {
     const [ job, setJob ] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3000/all-jobs/${id}`).then(res => res.json()).then(data => setJob(data));
+        fetch(`https://career-page-5smu.onrender.com/all-jobs/${id}`).then(res => res.json()).then(data => setJob(data));
     },[])
 
     const handleApply = async () => {
